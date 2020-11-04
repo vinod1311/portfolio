@@ -31,6 +31,11 @@ import {
       position: "relative",
       zIndex: "unset"
     },
+    toolbar: {
+      toolbar:'mixins',
+      flexGrow: 1
+
+    },
     absolute: {
       position: "absolute",
       zIndex: "1100"
@@ -64,6 +69,7 @@ import {
         color: "#8A4BAF",
         background: "transparent"
       }
+      
     },
     appResponsive: {
       margin: "20px 10px"

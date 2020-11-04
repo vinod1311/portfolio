@@ -74,10 +74,10 @@ export default function Header(props) {
     [classes.fixed]: fixed,
   });
   const brandComponent = (
-    <Button className={classes.title}>Vinod Panchal</Button>
+    <Button className={classes.title}><img src="/vp_navbarlogo-re.png" alt=""/></Button>
   );
   return (
-    <AppBar className={appBarClasses}>
+    <AppBar className={appBarClasses} position="sticky">
       <Container maxWidth="md" className={classes.navbarDisplayFlex}>
         <Toolbar className={classes.container}>
           {leftLinks !== undefined ? brandComponent : null}

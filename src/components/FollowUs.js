@@ -4,25 +4,20 @@ import {
   Grid,
   Typography,
   Box,
-  Button,
-  ListItem,
-  List,
   Container,
-  Link,
+  Link
 } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
+
 import CardMedia from "@material-ui/core/CardMedia";
 
-import desktopPersonal from "./desktopPersonal.png";
-import mobileProfile from "./mobileProfile.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 256,
-    backgroundColor: "#FFFAFD",
+    backgroundColor: "#FFFFF",
     maxHeight: 306,
   },
   media: {
@@ -33,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   services: {
-    backgroundColor: "#f1f2f6",
+    backgroundColor: "#FFFFF",
   },
   linkArea:{
     justifyContent: "center",
@@ -43,13 +38,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 const FollowUs = () => {
   const classes = useStyles();
-  const aboutImageUrl =
-    window.innerWidth >= 600 ? desktopPersonal : mobileProfile;
+  
   return (
     <div>
       <div className={classes.services}>
         <Container>
-          <Box alignCenter>
+          <Box alignCenter pt={2} pb={1}>
             <Grid
               container
               direction="row"
@@ -57,15 +51,16 @@ const FollowUs = () => {
               alignItems="center"
               sm={12}
               md={12}
-              spacing={1}
+              xs={12}
+              
             >
-              <Typography variant="h3" gutterBottom>
-                SERVICES.
-              </Typography>
+              <h1>
+               FOLLOW ME.
+              </h1>
             </Grid>
           </Box>
           <Grid container spacing={1}>
-            <Grid item container md={3} sm={12}>
+            <Grid item container md={3} sm={12} xs={12} justify="center">
               <Card className={classes.root}>
                 <CardActionArea>
                   <CardMedia
@@ -83,13 +78,13 @@ const FollowUs = () => {
                   </CardMedia>
                 </CardActionArea>
                 <CardActions className={classes.linkArea}>
-                  <Link href="#"  color="inherit">
+                  <Link href="https://www.instagram.com/vinod_1311/"  color="inherit">
                     vinod_1311
                   </Link>
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item container md={3} sm={12}>
+            <Grid item container md={3} sm={12} xs={12} justify="center">
               <Card className={classes.root}>
                 <CardActionArea>
                   <CardMedia
@@ -107,13 +102,13 @@ const FollowUs = () => {
                   </CardMedia>
                 </CardActionArea>
                 <CardActions className={classes.linkArea}>
-                  <Link href="#"  color="inherit">
+                  <Link href="https://www.facebook.com/vinod.panchal1311"  color="inherit">
                     vinod panchal
                   </Link>
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item container md={3} sm={12}>
+            <Grid item container md={3} sm={12} xs={12} justify="center">
               <Card className={classes.root}>
                 <CardActionArea>
                   <CardMedia
@@ -137,7 +132,7 @@ const FollowUs = () => {
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item container md={3} sm={12}>
+            <Grid item container md={3} sm={12} xs={12} justify="center">
               <Card className={classes.root}>
                 <CardActionArea>
                   <CardMedia
@@ -155,7 +150,7 @@ const FollowUs = () => {
                   </CardMedia>
                 </CardActionArea>
                 <CardActions className={classes.linkArea}>
-                  <Link href="#"  color="inherit">
+                  <Link href="https://www.linkedin.com/in/vinod-panchal-712812156"  color="inherit">
                     Vinod Panchal
                   </Link>
                 </CardActions>

@@ -18,12 +18,13 @@ import CardMedia from "@material-ui/core/CardMedia";
 import desktopPersonal from "./desktopPersonal.png";
 import mobileProfile from "./mobileProfile.png";
 
+import '../App.css'
+
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
     backgroundColor: "#FFFAFD",
-    minHeight:306,
-    
+    minHeight:465,   
   },
   content:{
     minHeight:160,
@@ -35,16 +36,14 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
-  services:{
-    backgroundColor:'#f1f2f6'
-  }
+ 
 }));
 const HomeServices = () => {
   const classes = useStyles();
   const aboutImageUrl =window.innerWidth >= 600 ? desktopPersonal : mobileProfile;
   return (
-    <div>
-      <div className={classes.services}>
+    <div className='homeabout'>
+      <div >
         <Container>
           <Box alignCenter>
             <Grid
@@ -54,15 +53,14 @@ const HomeServices = () => {
               alignItems="center"
               sm={12}
               md={12}
-              spacing={1}
             >
-              <Typography variant="h3" gutterBottom>
+              <h1>
                 SERVICES.
-              </Typography>
+              </h1>
             </Grid>
           </Box>
-          <Grid container spacing={1}>
-            <Grid item container md={3} sm={12}>
+          <Grid container spacing={2} >
+            <Grid item container md={3} sm={12} xs={12} justify="center">
               <Card className={classes.root}>
                 <CardActionArea>
                   <CardMedia
@@ -74,26 +72,23 @@ const HomeServices = () => {
                     </Grid>
                   </CardMedia>
                   <CardContent className={classes.content}>
-                    <Typography
+                    <h2
                       gutterBottom
                       variant="h5"
                       component="h2"
                       
                     >
                       Web Development
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
+                    </h2>
+                    <p
                     >
                       I build customized, scalable web applications using modern web technologies and tools. I ensure all websites adhere to insustry standards and deliver the best possible user experience.
-                    </Typography>
+                    </p>
                   </CardContent>
                 </CardActionArea>
               </Card>
             </Grid>
-            <Grid item md={3} sm={12}>
+            <Grid item md={3} sm={12} xs={12} justify="center">
               <Card className={classes.root}>
                 <CardActionArea>
                   <CardMedia
@@ -105,26 +100,20 @@ const HomeServices = () => {
                     </Grid>
                   </CardMedia>
                   <CardContent className={classes.content}>
-                    <Typography
-                      gutterBottom
-                      variant="h5"
-                      component="h2"
+                    <h2
                       
                     >
                       MobileApp Development
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
+                    </h2>
+                    <p
                     >
                       I build customized, scalable MobileApp applications using modern MobileApp technologies and tools. I ensure all MobileApp adhere to insustry standards and deliver the best possible user experience.
-                    </Typography>
+                    </p>
                   </CardContent>
                 </CardActionArea>
               </Card>
             </Grid>
-            <Grid item md={3} sm={12}>
+            <Grid item md={3} sm={12} xs={12} justify="center">
               <Card className={classes.root}>
                 <CardActionArea>
                   <CardMedia
@@ -136,27 +125,19 @@ const HomeServices = () => {
                     </Grid>
                   </CardMedia>
                   <CardContent className={classes.content}>
-                    <Typography
-                      gutterBottom
-                      variant="h5"
-                      component="h2"
-                      justifyCenter
-                      alignCenter
+                    <h2
                     >
                       UX/UI
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
+                    </h2>
+                    <p
                     >
                       Ui can be presumed as a way of how a use interacts with the web app while UX is about how the user feels ehile using the app. Our speciakized designers assure you to get the real advantage of UI/UX design with their creative and analytical abilities.
-                    </Typography>
+                    </p>
                   </CardContent>
                 </CardActionArea>
               </Card>
             </Grid>
-            <Grid item md={3} sm={12}>
+            <Grid item md={3} sm={12} xs={12} justify="center">
               <Card className={classes.root}>
                 <CardActionArea>
                   <CardMedia
@@ -168,22 +149,14 @@ const HomeServices = () => {
                     </Grid>
                   </CardMedia>
                   <CardContent className={classes.content}>
-                    <Typography
-                      gutterBottom
-                      variant="h5"
-                      component="h2"
-                      justifyCenter
-                      alignCenter
+                    <h2
                     >
                       Website Management
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
+                    </h2>
+                    <p
                     >
                       I provide various website management options which include - updating content, backing-up important data, monitoring and security/software updates.
-                    </Typography>
+                    </p>
                   </CardContent>
                 </CardActionArea>
               </Card>

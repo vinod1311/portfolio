@@ -5,9 +5,7 @@ import {
   Typography,
   Box,
   Button,
-  ListItem,
-  List,
-  Container,
+  Container
 } from "@material-ui/core";
 import desktopPersonal from "./desktopPersonal.png";
 import mobileProfile from "./mobileProfile.png";
@@ -18,40 +16,34 @@ const HomeAbout = () => {
   const aboutImageUrl = window.innerWidth >= 600 ? desktopPersonal : mobileProfile;
     
   return (
+
     <div>
       <div className="about">
         <Container>
-          <Box alignCenter>
-            <Grid
-              container
-              direction="row"
-              justify="center"
-              alignItems="center"
-              xs={12}
-              md={12}
-            >
-              <Typography variant="h3" gutterBottom>
-                ABOUT ME.
-              </Typography>
-            </Grid>
-          </Box>
+          
           <Grid container>
-            <Grid item md={6} sm={12}>
+            <Grid item md={6} sm={12} xs={12}>
               <Box>
                 <img src={aboutImageUrl} alt="" />
               </Box>
             </Grid>
-            <Grid item md={6} sm={12}>
+            <Grid item md={6} sm={12} xs={12}>
+            
+              
+            
               <Box pt={4}>
-                <Typography variant="h5" gutterBottom>
+              <h1>
+                ABOUT ME.
+              </h1>
+                <h2 className='gutterBottom'>
                   I'm Vinod Panchal, a creative Web developer based in
                   Ahmedabad, India.
-                </Typography>
-                <Typography variant="subtitle1" gutterBottom>
+                </h2>
+                <p className='gutterBottom'>
                   I'm Freelance Fullstack developer, I'm passionate about
                   creating and developing website.
-                </Typography>
-                <Button variant="contained" color="secondary">
+                </p>
+                <Button variant="contained" color="secondary" href='/about'>
                   Know More
                 </Button>
               </Box>
