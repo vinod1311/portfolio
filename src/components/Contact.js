@@ -6,8 +6,8 @@ import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 
 import { makeStyles } from "@material-ui/core/styles";
 
-import DesktopImg from './contact_us_1.png'
-import MobileImg from './contact_us_2.png'
+import DesktopImg from './contactus1.png'
+import MobileImg from './contactus2.png'
 
 const useStyles = makeStyles((theme) => ({
 

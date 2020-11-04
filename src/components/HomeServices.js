@@ -2,11 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Grid,
-  Typography,
   Box,
-  Button,
-  ListItem,
-  List,
   Container,
 } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
@@ -121,7 +117,7 @@ const HomeServices = () => {
                     title="Contemplative Reptile"
                   >
                     <Grid container direction="row" justify="center" alignItems="center">
-                      <img src="/ux-design.png" alt="" />
+                      <img src="/uxdesign.png" alt="" />
                     </Grid>
                   </CardMedia>
                   <CardContent className={classes.content}>
