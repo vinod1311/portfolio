@@ -21,9 +21,11 @@ const Home = () => {
         <Grid  item>
           <HeroContent />
         </Grid>
+        <Box pt={5}>
         <Grid  item>
           <HomeAbout />
         </Grid>
+        </Box>
         <Grid  item>
           <HomeServices />
         </Grid>

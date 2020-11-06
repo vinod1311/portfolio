@@ -5,40 +5,30 @@ import {
   Typography,
   Box,
   Container,
-  Link
+  Link,
+  Button,
 } from "@material-ui/core";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
+import { borders } from "@material-ui/system";
 
-import CardMedia from "@material-ui/core/CardMedia";
-
+const defaultProps = {
+  bgcolor: "background.paper",
+  m: 1,
+  borderStyle:'dashed',
+  style: { width: "200px", height: "200px", },
+  
+};
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 256,
-    backgroundColor: "#FFFFF",
-    maxHeight: 306,
+    "& > *": {
+      margin: theme.spacing(1),
+    },
   },
-  media: {
-    height: 256,
-  },
-  imageLogo: {
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  services: {
-    backgroundColor: "#FFFFF",
-  },
-  linkArea:{
-    justifyContent: "center",
-    alignItems: "center",
-    fontSize:'20px'
-  }
 }));
+
 const FollowUs = () => {
   const classes = useStyles();
-  
+
   return (
     <div>
       <div className={classes.services}>
@@ -46,115 +36,93 @@ const FollowUs = () => {
           <Box alignCenter pt={2} pb={1}>
             <Grid
               container
+              item
               direction="row"
               justify="center"
               alignItems="center"
               sm={12}
               md={12}
               xs={12}
-              
             >
-              <h1>
-               FOLLOW ME.
-              </h1>
+              <h1>FOLLOW ME.</h1>
             </Grid>
           </Box>
           <Grid container spacing={1}>
             <Grid item container md={3} sm={12} xs={12} justify="center">
-              <Card className={classes.root}>
-                <CardActionArea>
-                  <CardMedia
-                    className={classes.media}
-                    title="Contemplative Reptile"
-                  >
-                    <Grid
-                      container
-                      direction="row"
-                      justify="center"
-                      alignItems="center"
-                    >
+              <div className={classes.root}>
+                <Box
+                  border={2}
+                  {...defaultProps}
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  borderColor= "#CD3AA1"
+                  
+                >
+                  <Box>
+                    <Link href='https://www.instagram.com/vinod_1311/'>
                       <img src="/instagram.png" alt="" />
-                    </Grid>
-                  </CardMedia>
-                </CardActionArea>
-                <CardActions className={classes.linkArea}>
-                  <Link href="https://www.instagram.com/vinod_1311/"  color="inherit">
-                    vinod_1311
-                  </Link>
-                </CardActions>
-              </Card>
+                    </Link>
+                  </Box>
+                </Box>
+              </div>
             </Grid>
             <Grid item container md={3} sm={12} xs={12} justify="center">
-              <Card className={classes.root}>
-                <CardActionArea>
-                  <CardMedia
-                    className={classes.media}
-                    title="Contemplative Reptile"
-                  >
-                    <Grid
-                      container
-                      direction="row"
-                      justify="center"
-                      alignItems="center"
-                    >
+            <div className={classes.root}>
+                <Box
+                  border={2}
+                  {...defaultProps}
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  borderColor= "#1976D2"
+                  
+                >
+                  <Box>
+                    <Link href='https://www.facebook.com/vinod.panchal1311'>
                       <img src="/facebook.png" alt="" />
-                    </Grid>
-                  </CardMedia>
-                </CardActionArea>
-                <CardActions className={classes.linkArea}>
-                  <Link href="https://www.facebook.com/vinod.panchal1311"  color="inherit">
-                    vinod panchal
-                  </Link>
-                </CardActions>
-              </Card>
+                    </Link>
+                  </Box>
+                </Box>
+              </div>
             </Grid>
             <Grid item container md={3} sm={12} xs={12} justify="center">
-              <Card className={classes.root}>
-                <CardActionArea>
-                  <CardMedia
-                    className={classes.media}
-                    title="Contemplative Reptile"
-                  >
-                    <Grid
-                      container
-                      direction="row"
-                      justify="center"
-                      alignItems="center"
-                    >
-                      <img src="/gmail.png" alt="" />
-                    </Grid>
-                  </CardMedia>
-                </CardActionArea>
-                <CardActions className={classes.linkArea}>
-                  <Link href="#"  color="inherit">
-                    contactvinod13@gmail.com
-                  </Link>
-                </CardActions>
-              </Card>
+            <div className={classes.root}>
+                <Box
+                  border={2}
+                  {...defaultProps}
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  borderColor= "#4CAF50"
+                  
+                >
+                  <Box>
+                    <Link href='https://api.whatsapp.com/send/?phone=919925065608&text=I%27m+Looking+For&app_absent=0'>
+                      <img src="/whatsapp.png" alt="" />
+                    </Link>
+                  </Box>
+                </Box>
+              </div>
             </Grid>
             <Grid item container md={3} sm={12} xs={12} justify="center">
-              <Card className={classes.root}>
-                <CardActionArea>
-                  <CardMedia
-                    className={classes.media}
-                    title="Contemplative Reptile"
-                  >
-                    <Grid
-                      container
-                      direction="row"
-                      justify="center"
-                      alignItems="center"
-                    >
+            <div className={classes.root}>
+                <Box
+                  border={2}
+                  {...defaultProps}
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  borderColor= "#0077B7"
+                  
+                >
+                  <Box>
+                    <Link href='https://www.linkedin.com/in/vinod-panchal-712812156'>
                       <img src="/linkedin.png" alt="" />
-                    </Grid>
-                  </CardMedia>
-                </CardActionArea>
-                <CardActions className={classes.linkArea}>
-                  <Link href="https://www.linkedin.com/in/vinod-panchal-712812156"  color="inherit">
-                    Vinod Panchal
-                  </Link>
-                </CardActions>
-              </Card>
+                    </Link>
+                  </Box>
+                </Box>
+              </div>
             </Grid>
           </Grid>
         </Container>

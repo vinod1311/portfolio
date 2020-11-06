@@ -10,7 +10,7 @@ import Footer from "./Footer";
 
 const Routing = () => {
   return (
-    <div>
+    <React.Fragment>
       <Header />
       <Router>
         <Switch>
@@ -19,9 +19,9 @@ const Routing = () => {
           <Route path="/work" component={Work} exact />
           <Route path="/contact" component={Contact} exact />
         </Switch>
-      </Router>
-      <Footer />
-    </div>
+      </Router> 
+       <Footer />
+    </React.Fragment>
   );
 };
 export default Routing;

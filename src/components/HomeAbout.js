@@ -7,8 +7,8 @@ import {
   Button,
   Container
 } from "@material-ui/core";
-import desktopPersonal from "./desktopPersonal.png";
-import mobileProfile from "./mobileProfile.png";
+ import desktopPersonal from "./desktopPersonal.png";
+ import mobileProfile from "./mobileProfile.png";
 
 const useStyles = makeStyles((theme) => ({}));
 const HomeAbout = () => {
@@ -23,9 +23,9 @@ const HomeAbout = () => {
           
           <Grid container>
             <Grid item md={6} sm={12} xs={12}>
-              <Box>
+               <Box>
                 <img src={aboutImageUrl} alt="" />
-              </Box>
+              </Box> 
             </Grid>
             <Grid item md={6} sm={12} xs={12}>
             

@@ -9,6 +9,7 @@ import {
   List,
   Link,
 } from "@material-ui/core";
+import Image from 'material-ui-image'
 import '../App.css'
 
 import Contact from "./Contact";
@@ -19,8 +20,8 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 
-import desktopbg from "./desktopbg1.png";
-import mobilebg from "./bgremove.png";
+ import desktopbg from "./desktopbg1.png";
+ import mobilebg from "./bgremove.png";
 
 const useStyles = makeStyles((theme) => ({
   herocontent: {
@@ -44,12 +45,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 const HeroContent = () => {
   const classes = useStyles();
-  const heroImageUrl = window.innerWidth >= 600 ? desktopbg : mobilebg;
+   const heroImageUrl = window.innerWidth >= 600 ? desktopbg : mobilebg;
 
   return (
     <div className={classes.herocontent}>
       <Grid container>
-        <Grid item md={6} sm={12} xs={12}>
+        <Grid container item md={6} sm={12} xs={12}>
           <Box className={classes.heroText}>
             <Box pb={2}>
               <h1 >
@@ -113,9 +114,9 @@ const HeroContent = () => {
           </Box>
         </Grid>
         <Grid item md={6} sm={12} xs={12} item>
-          <Box className={classes.heroImg}>
-            <img src={heroImageUrl} alt="" />
-          </Box>
+           <Box className={classes.heroImg}>
+            <img src={heroImageUrl}   />
+          </Box> 
         </Grid>
       </Grid>
     </div>

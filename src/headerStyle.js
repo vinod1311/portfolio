@@ -71,9 +71,7 @@ import {
       }
       
     },
-    appResponsive: {
-      margin: "20px 10px"
-    },
+    
     primary: {
       backgroundColor: primaryColor,
       color: "#FFFFFF",
