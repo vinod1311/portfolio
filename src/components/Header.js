@@ -74,7 +74,7 @@ export default function Header(props) {
     [classes.fixed]: fixed,
   });
   const brandComponent = (
-    <Button className={classes.title}><img src="/vpnavbarlogore.png" alt=""/></Button>
+    <Button className={classes.title}><img src="/vpnavbarlogo.png" alt=""/></Button>
   );
   return (
     <AppBar className={appBarClasses} position="sticky">

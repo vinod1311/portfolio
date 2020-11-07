@@ -11,16 +11,16 @@ import Footer from "./Footer";
 const Routing = () => {
   return (
     <React.Fragment>
-      <Header />
-      <Router>
+        <Header /> 
+       <Router>
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} exact />
           <Route path="/work" component={Work} exact />
           <Route path="/contact" component={Contact} exact />
         </Switch>
-      </Router> 
-       <Footer />
+      </Router>  
+       <Footer /> 
     </React.Fragment>
   );
 };

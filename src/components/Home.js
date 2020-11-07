@@ -34,9 +34,11 @@ const Home = () => {
           <LetTalk />
         </Grid>
         </Box>
+        <Box pb={3}>
         <Grid  item>
           <FollowUs />
         </Grid>
+        </Box>
       </Grid>
     </div>
   );

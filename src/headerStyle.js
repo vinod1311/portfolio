@@ -33,7 +33,8 @@ import {
     },
     toolbar: {
       toolbar:'mixins',
-      flexGrow: 1
+      flexGrow: 1,
+      
 
     },
     absolute: {
@@ -42,7 +43,8 @@ import {
     },
     fixed: {
       position: "fixed",
-      zIndex: "1100"
+      zIndex: "1100",
+      
     },
     container: {
       ...container,

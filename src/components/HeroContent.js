@@ -73,6 +73,7 @@ const HeroContent = () => {
                 gutterBottom
                 startIcon={<PersonIcon />}
                 href="/contact"
+                
               >
                 Contact ME
               </Button>
@@ -83,7 +84,7 @@ const HeroContent = () => {
                   href="https://www.instagram.com/vinod_1311/"
                   color="inherit"
                 >
-                  <InstagramIcon fontSize="large" />
+                  <InstagramIcon fontSize='default' />
                 </Link>
               </ListItem>
               <ListItem className={classes.iconList}>
@@ -91,7 +92,7 @@ const HeroContent = () => {
                   href="https://www.facebook.com/vinod.panchal1311"
                   color="inherit"
                 >
-                  <FacebookIcon fontSize="large" />
+                  <FacebookIcon fontSize="default" />
                 </Link>
               </ListItem>
               <ListItem className={classes.iconList}>
@@ -99,7 +100,7 @@ const HeroContent = () => {
                   href="https://www.linkedin.com/in/vinod-panchal-712812156"
                   color="inherit"
                 >
-                  <LinkedInIcon fontSize="large" />
+                  <LinkedInIcon fontSize="default" />
                 </Link>
               </ListItem>
               <ListItem className={classes.iconList}>
@@ -107,7 +108,7 @@ const HeroContent = () => {
                   href="https://api.whatsapp.com/send/?phone=919925065608&text=I%27m+Looking+For&app_absent=0"
                   color="inherit"
                 >
-                  <WhatsAppIcon fontSize="large" />
+                  <WhatsAppIcon fontSize="default" />
                 </Link>
               </ListItem>
             </List>

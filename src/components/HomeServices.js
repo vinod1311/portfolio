@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     minHeight: 160,
   },
   media: {
+    paddingTop:'10PX',
     height: 80,
   },
   imageLogo: {
@@ -59,7 +60,7 @@ const HomeServices = () => {
             
             
           >
-            <Grid item container md={3} sm={12} xs={12} justify="center">
+            <Grid item container md={3} sm={12} xs={12}  align="center">
               <Card className={classes.root} >
                 <CardActionArea>
                   <CardMedia
