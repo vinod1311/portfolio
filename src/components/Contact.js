@@ -58,9 +58,9 @@ const Contact = () => {
                     AlignItems: "center",
                   }}
                 >
-                  <EmailOutlinedIcon fontSize="large" />
+                  <EmailOutlinedIcon fontSize="large" color="#232129" />
                   <Box pl={2}>
-                    <Typography variant="h6" gutterBottom color="inherit">
+                    <Typography variant="h6" gutterBottom color="#232129">
                       contactvinod13@gmail.com
                     </Typography>
                   </Box>
@@ -76,16 +76,17 @@ const Contact = () => {
                     AlignItems: "center",
                   }}
                 >
-                  <PhoneIphoneOutlinedIcon fontSize="large" />
+                  <PhoneIphoneOutlinedIcon fontSize="large" color="#232129" />
                   <Box pl={2}>
-                    <Typography variant="h6" gutterBottom color="inherit">
+                    <Typography variant="h6" gutterBottom color="#232129">
                       +91 9925065608
                     </Typography>
                   </Box>
                 </div>
               </Grid>
               <Grid container item md={4} sm={12} xs={12}>
-                <div
+               
+                  <div
                   style={{
                     display: "inline-flex",
                     VerticalAlign: "text-bottom",
@@ -94,13 +95,14 @@ const Contact = () => {
                     AlignItems: "center",
                   }}
                 >
-                  <LocationOnOutlinedIcon fontSize="large" />
+                  <LocationOnOutlinedIcon fontSize="large" color="#232129"/>
                   <Box pl={2}>
-                    <Typography variant="h6" gutterBottom color="inherit">
+                    <Typography variant="h6" gutterBottom color="#232129">
                       Ahmedabad,India
                     </Typography>
                   </Box>
                 </div>
+               
               </Grid>
             </Grid>
           

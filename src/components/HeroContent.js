@@ -62,9 +62,9 @@ const HeroContent = () => {
               <h1 >
                 Web Developer.
               </h1>
-              <Typography variant="h6" gutterBottom>
-                <b>Freelance Web And Mobile App.</b>
-              </Typography>
+              <h4>
+                Freelance Web And Mobile App.
+              </h4>
             </Box>
             <Box pb={2}>
               <Button

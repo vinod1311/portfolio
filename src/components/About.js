@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
   
   bg: {
-    backgroundColor: "#f1f2f6",
+    backgroundColor: "#EDF2F7",
     padding: "5px",
   },
   aboutBg: {
@@ -87,6 +87,7 @@ const About = () => {
                     <Grid container>
                       <Grid container item md={12} sm={12} xs={12}>
                         <Grid container item md={6} sm={6} xs={6}>
+                          <p>
                           <div
                             style={{
                               display: "inline-flex",
@@ -99,8 +100,10 @@ const About = () => {
                             <AddIcon fontSize="default" />
                             HTML 5
                           </div>
+                          </p>
                         </Grid>
                         <Grid container item md={6} sm={6} xs={6}>
+                          <p>
                           <div
                             style={{
                               display: "inline-flex",
@@ -113,10 +116,12 @@ const About = () => {
                             <AddIcon fontSize="default" />
                             CSS3
                           </div>
+                          </p>
                         </Grid>
                       </Grid>
                       <Grid container item md={12} sm={12} xs={12}>
                         <Grid container item md={6} sm={6} xs={6}>
+                          <p>
                           <div
                             style={{
                               display: "inline-flex",
@@ -129,8 +134,10 @@ const About = () => {
                             <AddIcon fontSize="default" />
                             SCSS
                           </div>
+                          </p>
                         </Grid>
                         <Grid container item md={6} sm={6} xs={6}>
+                          <p>
                           <div
                             style={{
                               display: "inline-flex",
@@ -143,6 +150,7 @@ const About = () => {
                             <AddIcon fontSize="default" />
                             Javascript
                           </div>
+                          </p>
                         </Grid>
                       </Grid>
                     </Grid>
@@ -161,7 +169,8 @@ const About = () => {
                     <Grid container>
                       <Grid container item md={12} sm={12} xs={12}>
                         <Grid container item md={6} sm={6} xs={6}>
-                          <div
+                         <p>
+                         <div
                             style={{
                               display: "inline-flex",
                               VerticalAlign: "text-bottom",
@@ -173,8 +182,10 @@ const About = () => {
                             <AddIcon fontSize="default" />
                             Bootstrap
                           </div>
+                         </p>
                         </Grid>
                         <Grid container item md={6} sm={6} xs={6}>
+                        <p>
                           <div
                             style={{
                               display: "inline-flex",
@@ -187,10 +198,12 @@ const About = () => {
                             <AddIcon fontSize="default" />
                             ReactStrap
                           </div>
+                          </p>
                         </Grid>
                       </Grid>
                       <Grid container item md={12} sm={12} xs={12}>
                         <Grid container item md={6} sm={6} xs={6}>
+                          <p>
                           <div
                             style={{
                               display: "inline-flex",
@@ -203,8 +216,10 @@ const About = () => {
                             <AddIcon fontSize="default" />
                             React JS
                           </div>
+                          </p>
                         </Grid>
                         <Grid container item md={6} sm={6} xs={6}>
+                          <p>
                           <div
                             style={{
                               display: "inline-flex",
@@ -217,10 +232,12 @@ const About = () => {
                             <AddIcon fontSize="default" />
                             Material UI
                           </div>
+                          </p>
                         </Grid>
                       </Grid>
                       <Grid container item md={12} sm={12} xs={12}>
                         <Grid container item md={6} sm={6} xs={6}>
+                          <p>
                           <div
                             style={{
                               display: "inline-flex",
@@ -233,8 +250,10 @@ const About = () => {
                             <AddIcon fontSize="default" />
                             GIT Version Control
                           </div>
+                          </p>
                         </Grid>
                         <Grid container item md={6} sm={6} xs={6}>
+                          <p>
                           <div
                             style={{
                               display: "inline-flex",
@@ -247,6 +266,7 @@ const About = () => {
                             <AddIcon fontSize="default" />
                             API's
                           </div>
+                          </p>
                         </Grid>
                       </Grid>
                     </Grid>
