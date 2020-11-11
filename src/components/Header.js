@@ -77,7 +77,7 @@ export default function Header(props) {
     <Button className={classes.title}><img src="/vpnavbarlogo.png" alt=""/></Button>
   );
   return (
-    <AppBar className={appBarClasses} position="sticky">
+    <AppBar className={appBarClasses} >
       <Container maxWidth="md" className={classes.navbarDisplayFlex}>
         <Toolbar className={classes.container}>
           {leftLinks !== undefined ? brandComponent : null}
