@@ -8,8 +8,10 @@ import {
 } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
 
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+
 import desktopbg from "./aboutmebg.jpg";
-import mobilebg from "./mobileaboutmebg.png";
+import mobilebg from "./mobileaboutmebg.jpg";
 
 import '../App.css'
 
@@ -36,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
 
 const About = () => {
   const classes = useStyles();
-  const aboutMeImageUrl = window.innerWidth >= 600 ? desktopbg : mobilebg;
+  const matches = useMediaQuery('(max-width:600px)');
   return (
     <div>
       <Container>
@@ -295,7 +297,7 @@ const About = () => {
               </Grid>
             </Box>
           </Grid>
-          <Box className={classes.aboutBg } style={{backgroundImage: `url(${aboutMeImageUrl}) `,}} >
+          <Box className={classes.aboutBg } style={{backgroundImage: `url(${matches ? mobilebg : desktopbg}) `,}} >
           
           </Box>
         </Box>

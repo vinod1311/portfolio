@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
     backgroundColor: "#FFFAFD",
-    minHeight: 465,
+    minHeight: 460,
   },
   content: {
     minHeight: 160,
@@ -52,9 +52,11 @@ const HomeServices = () => {
               <h1>SERVICES.</h1>
             </Grid>
           </Box>
-          <Box alignItems="center" justifyItem="center">
-            <Grid spacing={2} container>
-              <Grid item container md={3} sm={12} xs={12} >
+          
+            <Grid spacing={2} container 
+      alignItems="center"
+      justify="center">
+              <Grid item  md={3} sm={12} xs={12} align="center" >
                 <Card className={classes.root}>
                   <CardActionArea>
                     <CardMedia
@@ -71,7 +73,7 @@ const HomeServices = () => {
                       </Grid>
                     </CardMedia>
                     <CardContent className={classes.content}>
-                    
+                      <Grid align="left">
                       <h3 >
                         Web Development
                       </h3>
@@ -81,12 +83,12 @@ const HomeServices = () => {
                         adhere to insustry standards and deliver the best
                         possible user experience.
                       </p>
-                      
+                      </Grid>
                     </CardContent>
                   </CardActionArea>
                 </Card>
               </Grid>
-              <Grid item md={3} sm={12} xs={12} >
+              <Grid item md={3} sm={12} xs={12} align="center">
                 <Card className={classes.root}>
                   <CardActionArea>
                     <CardMedia
@@ -103,6 +105,7 @@ const HomeServices = () => {
                       </Grid>
                     </CardMedia>
                     <CardContent className={classes.content}>
+                    <Grid align="left">
                       <h3>MobileApp Development</h3>
                       <p>
                         I build customized, scalable MobileApp applications
@@ -110,11 +113,12 @@ const HomeServices = () => {
                         all MobileApp adhere to insustry standards and deliver
                         the best possible user experience.
                       </p>
+                      </Grid>
                     </CardContent>
                   </CardActionArea>
                 </Card>
               </Grid>
-              <Grid item md={3} sm={12} xs={12} >
+              <Grid item md={3} sm={12} xs={12} align="center">
                 <Card className={classes.root}>
                   <CardActionArea>
                     <CardMedia
@@ -131,6 +135,7 @@ const HomeServices = () => {
                       </Grid>
                     </CardMedia>
                     <CardContent className={classes.content}>
+                    <Grid align="left">
                       <h3>UX/UI</h3>
                       <p>
                         Ui can be presumed as a way of how a use interacts with
@@ -139,11 +144,14 @@ const HomeServices = () => {
                         get the real advantage of UI/UX design with their
                         creative and analytical abilities.
                       </p>
+                      </Grid>
                     </CardContent>
                   </CardActionArea>
                 </Card>
               </Grid>
-              <Grid item md={3} sm={12} xs={12} >
+              
+              <Grid item md={3} sm={12} xs={12} align="center">
+              
                 <Card className={classes.root}>
                   <CardActionArea>
                     <CardMedia
@@ -160,18 +168,22 @@ const HomeServices = () => {
                       </Grid>
                     </CardMedia>
                     <CardContent className={classes.content}>
+                    <Grid align="left">
                       <h3>Website Management</h3>
                       <p>
                         I provide various website management options which
                         include updating content, backing-up important data,
                         monitoring and security/software updates.
                       </p>
+                      </Grid>
                     </CardContent>
                   </CardActionArea>
                 </Card>
+                
               </Grid>
+              
             </Grid>
-          </Box>
+          
         </Container>
       </div>
     </div>

@@ -5,6 +5,7 @@ import PhoneIphoneOutlinedIcon from "@material-ui/icons/PhoneIphoneOutlined";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 
 import { makeStyles } from "@material-ui/core/styles";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import DesktopImg from './contactus1.png'
 import MobileImg from './contactus2.png'
@@ -27,13 +28,13 @@ const Contact = () => {
 
   const classes = useStyles();
 
-  const aboutImageUrl = window.innerWidth >= 600 ? DesktopImg : MobileImg;
+  const matches = useMediaQuery('(max-width:600px)');
 
   return (
     <div>
       <Container>
         <Grid container>
-          <Box className={classes.contactBg} style={{backgroundImage: `url(${aboutImageUrl}) `,}}>
+          <Box className={classes.contactBg} style={{backgroundImage: `url(${matches ? MobileImg : DesktopImg}) `,}}>
 
           </Box>
 

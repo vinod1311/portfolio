@@ -4,11 +4,12 @@ import { Grid, Typography, Box, Button, Container } from "@material-ui/core";
 import desktopPersonal from "./desktopPersonal.png";
 import mobileProfile from "./mobileProfile.png";
 
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+
 const useStyles = makeStyles((theme) => ({}));
 const HomeAbout = () => {
   const classes = useStyles();
-  const aboutImageUrl =
-    window.innerWidth >= 600 ? desktopPersonal : mobileProfile;
+  const matches = useMediaQuery('(max-width:600px)');
 
   return (
     <div className="about">
@@ -16,7 +17,7 @@ const HomeAbout = () => {
         <Grid container>
           <Grid item md={6} sm={12} xs={12}>
             <Box>
-              <img src={aboutImageUrl} alt="" />
+              <img src={matches ? mobileProfile : desktopPersonal} alt="" />
             </Box>
           </Grid>
           <Grid item md={6} sm={12} xs={12}>

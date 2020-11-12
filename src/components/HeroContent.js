@@ -9,10 +9,10 @@ import {
   List,
   Link,
 } from "@material-ui/core";
-import Image from 'material-ui-image'
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import '../App.css'
 
-import Contact from "./Contact";
+
 
 import PersonIcon from "@material-ui/icons/Person";
 import InstagramIcon from "@material-ui/icons/Instagram";
@@ -45,7 +45,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 const HeroContent = () => {
   const classes = useStyles();
-   const heroImageUrl = window.innerWidth >= 600 ? desktopbg : mobilebg;
+  
+   const matches = useMediaQuery('(max-width:600px)');
 
   return (
     <div className={classes.herocontent}>
@@ -116,7 +117,7 @@ const HeroContent = () => {
         </Grid>
         <Grid item md={6} sm={12} xs={12} item>
            <Box className={classes.heroImg}>
-            <img src={heroImageUrl}   />
+            <img src={matches ? mobilebg : desktopbg }   />
           </Box> 
         </Grid>
       </Grid>
