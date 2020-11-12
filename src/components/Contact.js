@@ -39,13 +39,13 @@ const Contact = () => {
           </Box>
 
           <Box pb={7} pt={1}>
-            <h1>
+            <h2>
               Let's build something great together.
-            </h1>
-            <h1>
+            </h2>
+            <h2>
               If you'd like to start a new project, need help with an existing
               project or have any other enquiry, please get in touch.
-            </h1>
+            </h2>
           </Box>
           
             <Grid container>

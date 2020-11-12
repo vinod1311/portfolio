@@ -25,7 +25,7 @@ import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 
 const useStyles = makeStyles((theme) => ({
   herocontent: {
-    height: "100vh",
+    
     backgroundColor: "#FFFFFF",
   },
   iconList: {
